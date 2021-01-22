@@ -16,8 +16,38 @@ align-items: center;
     height: 70vh; 
     margin-top: 30% ;   
     margin:0 auto;
-    background: beige;
+    background: #a3d2ca;
     border-radius: 15px;
+    
+}
+.msmContainer h1{
+    text-align: center;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    margin: 5px 0;
+    transition: .5s;
+}
+.contenedor_resultado{
+    height: 75%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.resultado{
+    width: 45%;
+    height: 80%;
+    text-align: center;
+    border-radius: 20px;
+}
+.resultado p {
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    margin: 5px;
+}
+.resultado img {
+    width: 200px;
 }
 
 .titulo{
@@ -31,7 +61,34 @@ align-items: center;
     transition: .5s;
 
 }
-    
+.Contenedor_btn_reiniciar{
+    display: flex;
+    justify-content: center;
+}
+.button_reiniciar{
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgb(46, 53, 70);
+    font-size: 15px;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: .5s;
+
+}
+.button_reiniciar:hover{
+    width: 210px;
+    height: 42px;
+    font-size: 16px;
+    -webkit-box-shadow: 0px 0px 15px -5px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 15px -5px rgba(0,0,0,1);
+    box-shadow: 0px 0px 15px -5px rgba(0,0,0,1);
+}
+.button_reiniciar:active{
+    transform: scale(.95);
+} 
 
 .main{
     width: 70vw;
