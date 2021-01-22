@@ -32,6 +32,7 @@ align-items: center;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
     
 }
 
@@ -107,6 +108,7 @@ align-items: center;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 .item_game{
     width: 215px;
@@ -114,6 +116,7 @@ align-items: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .item img{
     width: 200px;
