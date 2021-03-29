@@ -14,9 +14,9 @@
     <section class="main">
 
         <!-- contenedor de resultado  -->
-        <section id="msmFinal" class="msmContainer ">
-            <h1 class="hide " id="tituloMsm_win">FIERA GANASTE</h1>
-            <h1 class="hide" id="tituloMsm_lose">PERDISTE IDOLO</h1>
+        <section id="msmFinal" class="msmContainer hide">
+            <h1 class="hide " id="tituloMsm_win">Felicitaciones Ganaste</h1>
+            <h1 class="hide" id="tituloMsm_lose">Lo sentimos Perdiste ☹</h1>
             <h1 class="hide" id="tituloMsm_tie">EMPATE CRACKKKKK</h1>
             <div class="contenedor_resultado">
                 <div class="resultado">
@@ -28,31 +28,31 @@
                     <img id="msmCpu" src="" alt="">
                 </div>
             </div>
-            <div class="Contenedor_btn_reiniciar">
-                <button id="btnReiniciar" class="button_reiniciar">Volver a JUGAR</button>
-            </div>
+                <button id="btnReiniciar" class="button reiniciar">Volver a JUGAR</button>
         </section>
         <!-- Final del contenedor de resultado  -->
 
+        <section class="">
 
-        <div class="titulo">
-            <h1>Elige piedra, papel o tijera</h1>
-        </div>
-
-        <div class="item">
-            <div class="item_game">
-                <img id="piedra" src="https://piedra-papel-tijera.com/images/piedra.png" alt="">
+            <div class="titulo">
+                <h1>Elige piedra, papel o tijera</h1>
             </div>
-            <div class="item_game">
-                <img id="papel" src="https://piedra-papel-tijera.com/images/papel.png" alt="">
+    
+            <div class="item">
+                <div class="item_game">
+                    <img id="piedra" src="https://piedra-papel-tijera.com/images/piedra.png" alt="">
+                </div>
+                <div class="item_game">
+                    <img id="papel" src="https://piedra-papel-tijera.com/images/papel.png" alt="">
+                </div>
+                <div class="item_game">
+                    <img id="tijera" src="https://piedra-papel-tijera.com/images/tijeras.png" alt="">
+                </div>
+    
+                <button id="btnEmpezar" class="button">Empezar el Juego</button>
+                
             </div>
-            <div class="item_game">
-                <img id="tijera" src="https://piedra-papel-tijera.com/images/tijeras.png" alt="">
-            </div>
-
-            <button id="btnEmpezar" class="button">Empezar el Juego</button>
-            
-        </div>
+        </section>
 
     </section>
     <script src="./js/script.js"></script>
