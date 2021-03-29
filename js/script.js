@@ -39,14 +39,12 @@ function juego(){
         transformarNumero();
         resultado(usuario,maquina)
     }
-    
     document.getElementById('papel').onclick  =  () =>  {
         usuario = 'papel'
         console.log(usuario)
         numeroRadon()
         transformarNumero();
         resultado(usuario,maquina)
-
     }
     
     document.getElementById('tijera').onclick  =  () =>  {
