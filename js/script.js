@@ -5,7 +5,6 @@ const piedra = document.getElementById('piedra');
 const papel = document.getElementById('papel');
 const tijera = document.getElementById('tijera');
 const btnEmpezar = document.getElementById('btnEmpezar');
-const btnContenedor = document.getElementById('btnContenedor');
 const btnReiniciar = document.getElementById('btnReiniciar');
 const msmFinal = document.querySelector('.msmContainer');//usando la clase
 const tituloMsm_win = document.getElementById('tituloMsm_win');
@@ -30,7 +29,7 @@ btnReiniciar.addEventListener('click', reiniciarJuego);
 
 
 function juego(){
-    btnContenedor.classList.add('hide')
+    btnEmpezar.classList.add('hide')
 
     document.getElementById('piedra').onclick  =  () =>  {
         usuario = 'piedra'
