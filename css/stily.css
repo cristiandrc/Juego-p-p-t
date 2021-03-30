@@ -43,7 +43,7 @@ flex-direction: column;
 
 /* /////////////////////////////////////////////////////////////////////////////////// */
 .msmContainer{
-    position: absolute;
+    position: relative;
     z-index: 1;
     width: 100vw;
     max-width: 1000px;
@@ -52,8 +52,6 @@ flex-direction: column;
     margin:0 auto;
     /* background: #a3d2ca; */
     border-radius: 15px;
-    left: 50%;
-    transform: translate(-50%);
 }
 .msmContainer h2{
     text-align: center;
