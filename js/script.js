@@ -6,10 +6,11 @@ const papel = document.getElementById('papel');
 const tijera = document.getElementById('tijera');
 const btnEmpezar = document.getElementById('btnEmpezar');
 const btnReiniciar = document.getElementById('btnReiniciar');
-const msmFinal = document.querySelector('.msmContainer');//usando la clase
+const msmFinal = document.querySelector('.msmContainer');//usando la clase del html
 const tituloMsm_win = document.getElementById('tituloMsm_win');
 const tituloMsm_lose = document.getElementById('tituloMsm_lose');
 const tituloMsm_tie = document.getElementById('tituloMsm_tie');
+const msmInicial = document.getElementById('msmInicial');
 var maquina;
 var usuario;
 
@@ -141,6 +142,7 @@ function ganas(){
     imgUser()
     tituloMsm_win.classList.remove('hide')
     msmFinal.classList.remove('hide')
+    msmInicial.classList.add('hide')
     // document.getElementById('msmFinal').innerHTML = 'FIERA GANASTE ;)';
 }
 
@@ -148,12 +150,14 @@ function perdio(){
     imgUser()
     tituloMsm_lose.classList.remove('hide')
     msmFinal.classList.remove('hide')
+    msmInicial.classList.add('hide')
 }
 
 function empate(){
     imgUser()
     tituloMsm_tie.classList.remove('hide')
     msmFinal.classList.remove('hide')
+    msmInicial.classList.add('hide')
 }
 
 function reiniciarJuego(){
@@ -161,5 +165,6 @@ function reiniciarJuego(){
     tituloMsm_lose.classList.add('hide')
     tituloMsm_tie.classList.add('hide')
     msmFinal.classList.add('hide');
+    msmInicial.classList.remove('hide')
     juego();
 }
