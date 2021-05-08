@@ -1,5 +1,6 @@
-// this.secuencia = Array(ULTIMO_NIVEL).fill(0).map(n =>Math.floor(Math.random() * 4))
 // document.getElementById("msmUser").src="https://piedra-papel-tijera.com/images/piedra.png";
+import './css/style.css'
+import './css/table.css'
 
 const piedra = document.getElementById('piedra');
 const papel = document.getElementById('papel');
@@ -11,48 +12,27 @@ const tituloMsm_win = document.getElementById('tituloMsm_win');
 const tituloMsm_lose = document.getElementById('tituloMsm_lose');
 const tituloMsm_tie = document.getElementById('tituloMsm_tie');
 const msmInicial = document.getElementById('msmInicial');
-var maquina;
-var usuario;
+
 
 btnEmpezar.addEventListener('click', juego);
 btnReiniciar.addEventListener('click', reiniciarJuego);
-// piedra.addEventListener('click',iniciarJuego);
-// papel.addEventListener('click',iniciarJuego);
-// tijera.addEventListener('click',iniciarJuego);
-
-
-//  function iniciarJuego() {
-//     numeroRadon()
-//     transformarNumero(numero);
-//     juego();
-//     resultado(usuario,maquina);
-//  }
 
 
 function juego(){
     btnEmpezar.classList.add('hide')
-
+    let maquina
     document.getElementById('piedra').onclick  =  () =>  {
-        usuario = 'piedra'
-        console.log(usuario)
-        numeroRadon()
-        transformarNumero();
-        resultado(usuario,maquina)
+        maquina = transformarNumero();
+        resultado('piedra',maquina)
     }
     document.getElementById('papel').onclick  =  () =>  {
-        usuario = 'papel'
-        console.log(usuario)
-        numeroRadon()
-        transformarNumero();
-        resultado(usuario,maquina)
+        maquina = transformarNumero();
+        resultado('papel',maquina)
     }
     
     document.getElementById('tijera').onclick  =  () =>  {
-        usuario = 'tijera'
-        console.log(usuario)
-        numeroRadon()
-        transformarNumero();
-        resultado(usuario,maquina)
+        maquina = transformarNumero();
+        resultado('tijera',maquina)
     }
 }
 
@@ -60,35 +40,30 @@ function juego(){
 
 
 function resultado(user,cpu){
-    var user = usuario;
-    var cpu = maquina;
     if (user != cpu) {
         if (user === 'piedra' && cpu === 'tijera' || user === 'papel' && cpu === 'tijera' || user === 'tijera' && cpu === 'papel' ) {
-            console.log("El Usuario Gano con " + user)
-            ganas()
+            ganas(user,cpu)
         }else{
-            console.log("La Maquina Gana con " + cpu + user)
-            perdio()
+            perdio(user,cpu)
         }
         
     }else{
-        console.log("EMPATE" + cpu + user);
-        empate()
+        empate(user,cpu)
     }
 }
-function imgUser(){
+function imgUser(usuario, maquina){
     switch (usuario) {
         case 'piedra':
-            document.getElementById("msmUser").src="../assets/img/piedra.png";
-            imgCpu()
+            document.getElementById("msmUser").src="../src/assets/img/piedra.png";
+            imgCpu(maquina)
             break;
         case 'papel':
-            document.getElementById('msmUser').src="../assets/img/papel.png";
-            imgCpu()
+            document.getElementById('msmUser').src="../src/assets/img/papel.png";
+            imgCpu(maquina)
             break;
         case 'tijera':
-            document.getElementById('msmUser').src="../assets/img/tijeras.png";
-            imgCpu()
+            document.getElementById('msmUser').src="../src/assets/img/tijeras.png";
+            imgCpu(maquina)
 
         default:
             break;
@@ -97,29 +72,27 @@ function imgUser(){
 
 }
 
-function imgCpu(){
+function imgCpu(maquina){
     switch (maquina) {
         case 'piedra':
-            document.getElementById("msmCpu").src="https://piedra-papel-tijera.com/images/piedra.png";
+            document.getElementById("msmCpu").src="../src/assets/img/piedra.png";
             break;
         case 'papel':
-            document.getElementById('msmCpu').src="https://piedra-papel-tijera.com/images/papel.png";
+            document.getElementById('msmCpu').src="../src/assets/img/papel.png";
             break;
         case 'tijera':
-            document.getElementById('msmCpu').src="https://piedra-papel-tijera.com/images/tijeras.png";
+            document.getElementById('msmCpu').src="../src/assets/img/tijeras.png";
 
         default:
             break;
     }
 }
 
-function numeroRadon(){
-    numero = Math.floor(Math.random() * 3)
-}
 
 function transformarNumero(){
-    // numeroRadon()
-    switch (numero) {
+    let number = Math.floor(Math.random() * 3)
+    let maquina
+    switch (number) {
         case 0:
             maquina = 'piedra'
             return maquina
@@ -138,23 +111,23 @@ function transformarNumero(){
 }
 
 
-function ganas(){
-    imgUser()
+function ganas(user,cpu){
+    imgUser(user,cpu)
     tituloMsm_win.classList.remove('hide')
     msmFinal.classList.remove('hide')
     msmInicial.classList.add('hide')
     // document.getElementById('msmFinal').innerHTML = 'FIERA GANASTE ;)';
 }
 
-function perdio(){
-    imgUser()
+function perdio(user,cpu){
+    imgUser(user,cpu)
     tituloMsm_lose.classList.remove('hide')
     msmFinal.classList.remove('hide')
     msmInicial.classList.add('hide')
 }
 
-function empate(){
-    imgUser()
+function empate(user,cpu){
+    imgUser(user,cpu)
     tituloMsm_tie.classList.remove('hide')
     msmFinal.classList.remove('hide')
     msmInicial.classList.add('hide')
