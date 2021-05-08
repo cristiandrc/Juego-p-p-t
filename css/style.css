@@ -38,6 +38,7 @@ flex-direction: column;
 
 .logo_github img {
     width: 40px;
+    height: 40px;
 }
 
 
@@ -87,9 +88,9 @@ flex-direction: column;
 
 
 .button.reiniciar {
-   top: 80%;
-   left: 50%;
-   transform: translate(-50%);
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%);
 } 
 .button_reiniciar:hover{
     width: 210px;
@@ -155,6 +156,7 @@ flex-direction: column;
 }
 .item img{
     width: 100px;
+    height: 100px;
     cursor: pointer;    
     transition: .5s;
     border-radius: 50%;

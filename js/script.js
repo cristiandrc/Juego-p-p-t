@@ -79,15 +79,15 @@ function resultado(user,cpu){
 function imgUser(){
     switch (usuario) {
         case 'piedra':
-            document.getElementById("msmUser").src="https://piedra-papel-tijera.com/images/piedra.png";
+            document.getElementById("msmUser").src="../assets/img/piedra.png";
             imgCpu()
             break;
         case 'papel':
-            document.getElementById('msmUser').src="https://piedra-papel-tijera.com/images/papel.png";
+            document.getElementById('msmUser').src="../assets/img/papel.png";
             imgCpu()
             break;
         case 'tijera':
-            document.getElementById('msmUser').src="https://piedra-papel-tijera.com/images/tijeras.png";
+            document.getElementById('msmUser').src="../assets/img/tijeras.png";
             imgCpu()
 
         default:

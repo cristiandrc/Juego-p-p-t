@@ -1,0 +1,24 @@
+{
+  "name": "PPT",
+  "version": "1.0.0",
+  "description": "Es un juego de piedra papel o tijera basico, juegas conta la maquina el resultado de la maquina es aleatrorio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cristiandrc/Juego-p-p-t.git"
+  },
+  "keywords": [],
+  "author": "Criatian Rojas <cristian@hola.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cristiandrc/Juego-p-p-t/issues"
+  },
+  "homepage": "https://github.com/cristiandrc/Juego-p-p-t#readme",
+  "dependencies": {
+    "webpack": "^5.36.2",
+    "webpack-cli": "^4.7.0"
+  }
+}
