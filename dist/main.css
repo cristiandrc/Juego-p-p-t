@@ -1,0 +1,238 @@
+
+:root {
+    --colorbg:linear-gradient(to right top, #051937, #373d56, #646578, #92919b, #c0c0c0);
+    --font-base:'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    font-family: var(--font-base);
+    font-size: 62.5%;
+}
+
+
+body{
+background-image: linear-gradient(to left top, #1f5466, #1a5d6e, #136676, #0a6f7c, #007882);
+background-repeat: no-repeat;
+background-size: cover;
+height: 100vh;
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+
+/* /////////////////////////////////////////////////////////////////////////// */
+
+.logo_github {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.logo_github img {
+    width: 40px;
+    height: 40px;
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////////// */
+.msmContainer{
+    position: relative;
+    z-index: 1;
+    width: 100vw;
+    max-width: 1000px;
+    height: 70vh; 
+    margin-top: 30% ;   
+    margin:0 auto;
+    /* background: #a3d2ca; */
+    border-radius: 15px;
+}
+.msmContainer h2{
+    text-align: center;
+    font-size: 3.0rem;
+    color: rgb(255, 255, 255);
+    margin: 5px 0;
+    transition: .5s;
+}
+.contenedor_resultado{
+    height: 75%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 2.0rem;
+}
+
+.resultado{
+    width: 45%;
+    height: 80%;
+    text-align: center;
+    border-radius: 2.0rem;
+}
+.resultado p {
+    font-size: 2.0rem;
+    color: rgb(255, 255, 255);
+    margin: 5px;
+}
+.resultado img {
+    margin-top: 40px;
+    width: 100px;
+}
+
+
+.button.reiniciar {
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%);
+} 
+.button.reiniciar:hover{
+    transform: scale(1.1) translate(-46%);
+}
+.button_reiniciar:active{
+    transform: scale(.95);
+} 
+
+
+/* ////////////////////////////////////////////////////////////////////////////////// */
+
+.main{
+    width: 100vw;
+    height: 90vh; 
+    /* margin-top: 1px;    */
+    margin:0 auto;
+    border-radius: 15px;
+    display: grid;
+    place-items: center;
+    /* overflow: hidden; */
+}
+
+.container_principal{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.titulo{
+    position: relative;
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+}
+.titulo h1{
+    font-size: 2.0rem;
+    color: rgb(255, 255, 255);
+    transition: .5s;
+
+}
+.item{
+    width: 70%;
+    max-width: 1000px;
+    height: 70vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.item_game{
+    width: 150px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.item img{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;    
+    transition: .5s;
+    border-radius: 50%;
+}
+.item_game img:hover {
+    transform: rotate(10deg) ;
+}
+
+
+
+.button{
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgb(46, 53, 70);
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: white;
+    /* outline: none; */
+    border: none;
+    cursor: pointer;
+    transition: .5s ease;
+
+}
+
+.button:hover {
+    transform: scale(1.1);
+    background-color: #a1dcdf;
+    color: black;
+    box-shadow: 6px 8px 5px 0px rgb(0 0 0 / 75%);
+}
+
+
+
+
+.hide{
+    display: none;
+}
+@media (min-width: 600px)  {
+    
+    .titulo h1 {
+        font-size: 3.0rem;
+    }
+    
+    
+    .item {
+        width: 80vw;
+    }
+    
+    .item_game {
+        width: 160px;
+        height: 160px;
+    }
+    
+    .item_game img {
+        width: 160px;
+        height: 160px;
+    }
+    
+    .button{
+        width: 250px;
+        height: 70px;
+        font-size: 2.0rem;
+    
+    }
+    
+    
+    
+    /* ////////////////////////////////////////////////////////// */
+    
+    
+    .msmContainer h1{
+        font-size: 3.0rem;
+    
+    }
+    
+    .resultado p{
+        font-size: 3.0rem;
+    }
+    
+    .resultado img {
+        width: 160px;
+    }
+}
