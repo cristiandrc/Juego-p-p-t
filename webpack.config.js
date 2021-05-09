@@ -34,8 +34,7 @@ module.exports = {
             filename: './index.html'
         }),
 
-        new MiniCssExtractPlugin({
-        }),
+        new MiniCssExtractPlugin({}),
 
         new CopyPlugin({
             patterns: [{

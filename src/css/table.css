@@ -1,43 +1,46 @@
-.titulo h1 {
-    font-size: 3.0rem;
-}
-
-
-.item {
-    width: 80vw;
-}
-
-.item_game {
-    width: 160px;
-    height: 160px;
-}
-
-.item_game img {
-    width: 160px;
-    height: 160px;
-}
-
-.button{
-    width: 250px;
-    height: 70px;
-    font-size: 2.0rem;
-
-}
-
-
-
-/* ////////////////////////////////////////////////////////// */
-
-
-.msmContainer h1{
-    font-size: 3.0rem;
-
-}
-
-.resultado p{
-    font-size: 3.0rem;
-}
-
-.resultado img {
-    width: 160px;
+@media (min-width: 600px)  {
+    
+    .titulo h1 {
+        font-size: 3.0rem;
+    }
+    
+    
+    .item {
+        width: 80vw;
+    }
+    
+    .item_game {
+        width: 160px;
+        height: 160px;
+    }
+    
+    .item_game img {
+        width: 160px;
+        height: 160px;
+    }
+    
+    .button{
+        width: 250px;
+        height: 70px;
+        font-size: 2.0rem;
+    
+    }
+    
+    
+    
+    /* ////////////////////////////////////////////////////////// */
+    
+    
+    .msmContainer h1{
+        font-size: 3.0rem;
+    
+    }
+    
+    .resultado p{
+        font-size: 3.0rem;
+    }
+    
+    .resultado img {
+        width: 160px;
+    }
 }

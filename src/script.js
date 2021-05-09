@@ -2,6 +2,7 @@
 import './css/style.css'
 import './css/table.css'
 
+
 const piedra = document.getElementById('piedra');
 const papel = document.getElementById('papel');
 const tijera = document.getElementById('tijera');
