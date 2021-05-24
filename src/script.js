@@ -55,15 +55,15 @@ function resultado(user,cpu){
 function imgUser(usuario, maquina){
     switch (usuario) {
         case 'piedra':
-            document.getElementById("msmUser").src="../src/assets/img/piedra.png";
+            document.getElementById("msmUser").src="./assets/img/piedra.png";
             imgCpu(maquina)
             break;
         case 'papel':
-            document.getElementById('msmUser').src="../src/assets/img/papel.png";
+            document.getElementById('msmUser').src="./assets/img/papel.png";
             imgCpu(maquina)
             break;
         case 'tijera':
-            document.getElementById('msmUser').src="../src/assets/img/tijeras.png";
+            document.getElementById('msmUser').src="./assets/img/tijeras.png";
             imgCpu(maquina)
 
         default:
