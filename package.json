@@ -1,0 +1,33 @@
+{
+  "name": "PPT",
+  "version": "1.0.0",
+  "description": "Es un juego de piedra papel o tijera basico, juegas conta la maquina el resultado de la maquina es aleatrorio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development",
+    "start": "webpack serve --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cristiandrc/Juego-p-p-t.git"
+  },
+  "keywords": [],
+  "author": "Criatian Rojas <cristian@hola.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cristiandrc/Juego-p-p-t/issues"
+  },
+  "homepage": "https://github.com/cristiandrc/Juego-p-p-t#readme",
+  "devDependencies": {
+    "copy-webpack-plugin": "^8.1.1",
+    "css-loader": "^5.2.4",
+    "html-webpack-plugin": "^5.3.1",
+    "mini-css-extract-plugin": "^1.6.0",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.36.2",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
